@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "br.com.fazendaoagronegocio.fazendaoapp",
+    "sha256_cert_fingerprints":
+    ["CF:32:49:EA:59:79:0E:A9:B6:79:51:89:F2:44:0F:D4:25:60:C9:12:55:DB:C7:A0:A2:56:FF:A7:57:1F:57:4E"]
+  }
+}]

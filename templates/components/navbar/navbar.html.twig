@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-bg nav-down" id="navbar">
+    <div class="container my-container">
+        <div class="">
+            <a id='topoVoltar' href='javascript:void(0)' class='float-left text-white {{btnVoltar}}' onclick="history.back()"><span class='mdi mdi-36px mdi-chevron-left'></span></a>
+            <div style="text-align: center; vertical-align:middle;display:table-cell; height: 50px"><a href="/" class=""><img alt="logo" src="/assets/img/logo_white.png" height="40px"/> </a></div>
+        </div>
+        <ul class="navbar-nav navbar-right text-dark">
+            <li class="dropdown {{perfil}}">
+                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                    <i class="mdi mdi-24px mdi-account"></i>
+                    <span class="font-weight-light">{{primeiroNome}}</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-title">Olá, {{primeiroNome}}</div>
+                    <a href="/" class="dropdown-item font-weight-light">
+                        <i class="mdi mdi-18px mdi-view-grid-outline"></i> Início
+                    </a>
+                    <a href="/usuario/meusdados" class="dropdown-item font-weight-light">
+                        <i class="mdi mdi-18px mdi-account-outline"></i> Meus dados
+                    </a>
+                    <a href="/institucional/privacidade" class="dropdown-item font-weight-light">
+                        <i class="mdi mdi-18px mdi-lock-outline"></i> Termo de uso
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/usuario/logoff" class="dropdown-item font-weight-light">
+                        <span class="mdi mdi-18px mdi-logout"></span> Sair
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

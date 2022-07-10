@@ -1,0 +1,156 @@
+.btn {
+    font-size: 0.875rem;
+}
+
+.btn.active {
+    display: inline-block;
+}
+
+/*BTN PRIMARY*/
+.btn-primary{
+    border-radius: 15px;
+    background-color: var(--my-color-primary);
+    border-color: var(--my-color-primary);
+    box-shadow: 0 2px 6px #b9b9b9;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: var(--my-color-primary-hover) !important;
+    border-color: var(--my-color-primary-hover) !important;
+}
+
+.btn-primary:focus, .btn-primary.disabled:focus {
+    background-color: var(--my-color-primary-hover) !important;
+}
+
+.btn-primary:focus:active, .btn-primary.disabled:focus:active {
+    background-color: var(--my-color-primary-hover) !important;
+}
+
+
+.btn-primary:active, .btn-primary:hover, .btn-primary.disabled:active, .btn-primary.disabled:hover {
+    background-color: var(--my-color-primary-hover) !important;
+}
+
+/*BTN SECONDARY*/
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 15px;
+}
+
+.btn-outline-secondary {
+    border-radius: 15px;
+}
+
+/*BTN OUTLINE*/
+.btn-outline-primary, .btn-outline-primary.disabled {
+    border-radius: 15px;
+    border-color: var(--my-color-primary);
+    color: var(--my-color-primary);
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.disabled:focus {
+    background-color: var(--my-color-primary-hover) !important;
+}
+
+.btn-outline-primary:focus:active, .btn-outline-primary.disabled:focus:active {
+    background-color: var(--my-color-primary-hover) !important;
+}
+
+.btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.disabled:active, .btn-outline-primary.disabled:hover {
+    background-color: var(--my-color-primary-hover) !important;
+}
+
+/*BTN LINK*/
+.btn-link {
+    font-size: 0.875rem;
+}
+
+.btn-link {
+    color: var(--my-color-primary);
+}
+
+.btn-link:focus, .btn-link.disabled:focus {
+    color: var(--my-color-primary);
+}
+
+.btn-link:focus:active, .btn-link.disabled:focus:active {
+    color: var(--my-color-primary);
+}
+
+.btn-link:active, .btn-link:hover, .btn-link.disabled:active, .btn-link.disabled:hover {
+    color: var(--my-color-primary);
+}
+
+/*ESTILO PARA FORMULARIO - BOTAO DE UPLOAD */
+.btnInputFile {
+    width: auto;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    background: var(--my-color-primary);
+    padding: 0;
+    color: #fff;
+    background-color: transparent;
+    color: var(--my-color-primary);
+    line-height: 38px;
+    border-radius: 14px;
+    border: 1px solid var(--my-color-primary);
+    font-size: 12px;
+}
+
+.btnInputFile:hover {
+    background: #edfcea;
+    background-color: #edfcea;
+    color: var(--my-color-primary);
+}
+
+.btnInputFile div {
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    font-weight: 600;
+
+}
+
+.btnInputFile div {
+    cursor: pointer;
+
+}
+
+.btnInputFile input {
+    position: absolute;
+    right: 30px;
+    /*z-index: 2;*/
+    font-size: 100px; /* Aumenta tamanho do campo */
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*LINK*/
+a {
+    color: var(--my-color-primary);
+}
+
+a:hover {
+    color: var(--my-color-primary-hover);
+}
+
+/* Colors of the buttons*/
+.button-active, .selectors button:hover, .selectors button:active, .selectors button:focus {
+    background-color: transparent !important;
+    color: var(--my-color-primary);
+    line-height: 16px;
+}
+
+.button-inactive {
+    color: #000;
+    line-height: 16px;
+}
+

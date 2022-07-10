@@ -1,0 +1,61 @@
+.modal-content {
+    position: relative;
+    animation: modalAnimationSlideDown 0.4s;
+}
+
+.show .modal-content {
+    position: relative;
+    animation: modalAnimationSlideUp 0.4s;
+}
+
+.show {
+    display: inline-block;
+}
+
+@keyframes modalAnimationSlideUp {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes modalAnimationSlideDown {
+    from {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    to {
+        bottom: -300px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /*COLOR MODAL EM BAIXO QUANDO FOR MOBILE*/
+    .modal-dialog{
+        position:absolute;
+        bottom:0;
+        margin:0;
+        width:100%;
+        max-width: 100% !important;
+    }
+
+    .modal-dialog-telaCheia{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .modal-content-telaCheia{
+        height: auto;
+        min-height: 100%;
+        border-radius: 0;
+    }
+}

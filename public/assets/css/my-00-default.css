@@ -1,0 +1,250 @@
+/**
+ * Layout
+ *
+ * @author Bruno Morais
+ * @url http://bmorais.com
+ * @license MIT License
+ *
+ */
+@import url('https://fonts.googleapis.com/css??lang=pt-BR&family=Google+Sans:400,500,600,700%7CRoboto:400,500600,700%7CProduct+Sans:400,700%7C&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*@font-face {
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'Roboto';
+}*/
+
+:root {
+    --my-color-primary: #53B175;
+    --my-color-primary-hover: #346e4b;
+}
+
+/*FONTE DOS TEXTOS*/
+* {
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+}
+button {
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+}
+a {
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+}
+
+body {
+    background-color: #FCFCFC !important;
+}
+
+/*FOOTER NO FINAL DA TELA*/
+body{ height:100vh; margin:0; }
+
+footer{ min-height:50px;}
+body{display:flex; flex-direction:column;}
+footer{margin-top:auto; !important; margin-bottom: 50px !important;
+}
+
+.colorPreto {
+    color: #000000 !important;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: #a6a29f;
+}
+
+.nav-tabs .nav-item .nav-link {
+    font-size: 15px;
+}
+
+
+#app {
+    margin-top: 60px
+}
+
+.view-navbar{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.header-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.row {
+    margin: 0px;
+}
+
+.dropdown-menu a {
+    font-size: 16px;
+}
+
+.dropdown-menu .dropdown-title {
+    text-transform: none;
+    font-size: 18px;
+}
+
+a.dropdown-item:active {
+    color: #000;
+    background: #F8F9FA;
+}
+
+a.dropdown-item:focus {
+    color: #000 !important;
+    background: #F8F9FA;
+}
+
+.dropdown-divider {
+    border-top-color: #E2E2E2;
+}
+
+.section .section-title:before {
+    background-color: #d6d6d6;
+}
+
+.page-item.active .page-link {
+    background-color: #898989;
+    border-color: #898989;
+}
+
+.page-item.disabled .page-link {
+    color: #898989;
+}
+
+.text-primary {
+    color: var(--my-color-primary) !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+
+/*MENU INFERIOR*/
+.navigation-menu-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow-x: auto;
+    z-index: 999;
+}
+
+.navigation-menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #AAACB8;
+    text-decoration: none;
+    line-height: 1.1;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.navigation-menu-item:hover {
+    background-color: #eeeeee;
+}
+
+.navigation-menu-item-active {
+    color: #000000;
+}
+
+.navigation-menu-text{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.navigation-menu-item-icon {
+    font-size: 18px;
+}
+
+
+.group-container {
+    padding: 0;
+    height: 100%;
+}
+
+div.scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+div.scroll::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.scroll-item:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.scroll-item:active {
+    border: 1px solid red !important;
+}
+
+.nao-seleciona-texto {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*BREADCRUMB*/
+.breadcrumb-item-custom a{
+    font-family: 'Poppins', sans-serif !important;
+    color: #757575;
+    vertical-align: middle;
+    text-transform: none;
+}
+
+.breadcrumb-item-custom-active a{
+    font-family: 'Poppins', sans-serif !important;
+
+    color: #757575 ;
+    font-weight: 600;
+    vertical-align: middle;
+    /*line-height: 0px;*/
+}
+
+.breadcrumb-custom{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #FCFCFC;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 700;
+    font-size: 10px;
+    padding-left: 0px;
+    padding-top: 0;
+}
+/*FIM BREADCRUMB*/
+
+.div-title-page{
+    letter-spacing: 0.8px;
+}
+
+.title-page{
+    font-family: 'Poppins', sans-serif !important;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    margin: 0;
+}
+
